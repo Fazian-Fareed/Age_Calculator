@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div class="input-container">
+            <label for="dob_day">Day:</label>
+            <input type="number" id="dob_day" min="1" max="31" autocomplete="off">
+            <label for="dob_month">Month:</label>
+            <input type="number" id="dob_month" min="1" max="12" autocomplete="off">
+            <label for="dob_year">Year:</label>
+            <input type="number" id="dob_year" min="1950" max="2100" autocomplete="off">
+        </div>
+        <div id="error-message" class="error-message"></div>
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div id="result"></div> <br>
+        <div id="extreme-message"></div> <br>
+        <button id="reset-button" onclick="resetForm()" style="display: none;">Reset</button>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

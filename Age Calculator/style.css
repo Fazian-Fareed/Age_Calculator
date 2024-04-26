@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(87, 202, 255) 0%, rgb(28, 126, 192) 100%);
+}
+.container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+label {
+    flex: 0 0 30%;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 0 0 65%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);
+    padding-left: 10px;
+    height: 30px;
+}
+
+button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(23, 176, 247) 0%, rgb(8, 86, 138) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Dosis", sans-serif;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#result span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    display: none;
+}
